@@ -1,0 +1,2940 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20222.22.0624.2136                               -->
+<workbook original-version='18.1' source-build='2022.2.0 (20222.22.0624.2136)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Sample_customer_churn' inline='true' name='federated.13qdhf91mq3w3f1151htp1yxdc36' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Sample_customer_churn' name='textscan.055pdix1hbohy41exjzg90stg381'>
+            <connection class='textscan' directory='C:/Users/USER/Desktop/Task brief' filename='Sample_customer_churn.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.055pdix1hbohy41exjzg90stg381' name='Sample_customer_churn.csv' table='[Sample_customer_churn#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='CustomerID' ordinal='0' />
+            <column datatype='integer' name='Age' ordinal='1' />
+            <column datatype='string' name='Gender' ordinal='2' />
+            <column datatype='integer' name='Tenure' ordinal='3' />
+            <column datatype='integer' name='Usage Frequency' ordinal='4' />
+            <column datatype='integer' name='Support Calls' ordinal='5' />
+            <column datatype='integer' name='Payment Delay' ordinal='6' />
+            <column datatype='string' name='Subscription Type' ordinal='7' />
+            <column datatype='string' name='Contract Length' ordinal='8' />
+            <column datatype='integer' name='Total Spend' ordinal='9' />
+            <column datatype='integer' name='Last Interaction' ordinal='10' />
+            <column datatype='integer' name='Churn' ordinal='11' />
+            <column datatype='string' name='F13' ordinal='12' />
+            <column datatype='string' name='F14' ordinal='13' />
+            <column datatype='string' name='F15' ordinal='14' />
+            <column datatype='string' name='Age 1' ordinal='15' />
+            <column datatype='string' name='Tenure 1' ordinal='16' />
+            <column datatype='string' name='Usage Frequency 1' ordinal='17' />
+            <column datatype='string' name='Support Calls 1' ordinal='18' />
+            <column datatype='string' name='Payment Delay 1' ordinal='19' />
+            <column datatype='string' name='Total Spend 1' ordinal='20' />
+            <column datatype='string' name='Last Interaction 1' ordinal='21' />
+            <column datatype='string' name='Churn 1' ordinal='22' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.055pdix1hbohy41exjzg90stg381' name='Sample_customer_churn.csv' table='[Sample_customer_churn#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='CustomerID' ordinal='0' />
+            <column datatype='integer' name='Age' ordinal='1' />
+            <column datatype='string' name='Gender' ordinal='2' />
+            <column datatype='integer' name='Tenure' ordinal='3' />
+            <column datatype='integer' name='Usage Frequency' ordinal='4' />
+            <column datatype='integer' name='Support Calls' ordinal='5' />
+            <column datatype='integer' name='Payment Delay' ordinal='6' />
+            <column datatype='string' name='Subscription Type' ordinal='7' />
+            <column datatype='string' name='Contract Length' ordinal='8' />
+            <column datatype='integer' name='Total Spend' ordinal='9' />
+            <column datatype='integer' name='Last Interaction' ordinal='10' />
+            <column datatype='integer' name='Churn' ordinal='11' />
+            <column datatype='string' name='F13' ordinal='12' />
+            <column datatype='string' name='F14' ordinal='13' />
+            <column datatype='string' name='F15' ordinal='14' />
+            <column datatype='string' name='Age 1' ordinal='15' />
+            <column datatype='string' name='Tenure 1' ordinal='16' />
+            <column datatype='string' name='Usage Frequency 1' ordinal='17' />
+            <column datatype='string' name='Support Calls 1' ordinal='18' />
+            <column datatype='string' name='Payment Delay 1' ordinal='19' />
+            <column datatype='string' name='Total Spend 1' ordinal='20' />
+            <column datatype='string' name='Last Interaction 1' ordinal='21' />
+            <column datatype='string' name='Churn 1' ordinal='22' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sample_customer_churn.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CustomerID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CustomerID]</local-name>
+            <parent-name>[Sample_customer_churn.csv]</parent-name>
+            <remote-alias>CustomerID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample_customer_churn.csv_73551187CED44945BE5A580B73E09B6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[Sample_customer_churn.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample_customer_churn.csv_73551187CED44945BE5A580B73E09B6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[Sample_customer_churn.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample_customer_churn.csv_73551187CED44945BE5A580B73E09B6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tenure</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Tenure]</local-name>
+            <parent-name>[Sample_customer_churn.csv]</parent-name>
+            <remote-alias>Tenure</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample_customer_churn.csv_73551187CED44945BE5A580B73E09B6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Usage Frequency</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Usage Frequency]</local-name>
+            <parent-name>[Sample_customer_churn.csv]</parent-name>
+            <remote-alias>Usage Frequency</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample_customer_churn.csv_73551187CED44945BE5A580B73E09B6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Support Calls</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Support Calls]</local-name>
+            <parent-name>[Sample_customer_churn.csv]</parent-name>
+            <remote-alias>Support Calls</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample_customer_churn.csv_73551187CED44945BE5A580B73E09B6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Payment Delay</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Payment Delay]</local-name>
+            <parent-name>[Sample_customer_churn.csv]</parent-name>
+            <remote-alias>Payment Delay</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample_customer_churn.csv_73551187CED44945BE5A580B73E09B6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Subscription Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Subscription Type]</local-name>
+            <parent-name>[Sample_customer_churn.csv]</parent-name>
+            <remote-alias>Subscription Type</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample_customer_churn.csv_73551187CED44945BE5A580B73E09B6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Contract Length</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Contract Length]</local-name>
+            <parent-name>[Sample_customer_churn.csv]</parent-name>
+            <remote-alias>Contract Length</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample_customer_churn.csv_73551187CED44945BE5A580B73E09B6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Spend</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Spend]</local-name>
+            <parent-name>[Sample_customer_churn.csv]</parent-name>
+            <remote-alias>Total Spend</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample_customer_churn.csv_73551187CED44945BE5A580B73E09B6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last Interaction</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Last Interaction]</local-name>
+            <parent-name>[Sample_customer_churn.csv]</parent-name>
+            <remote-alias>Last Interaction</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample_customer_churn.csv_73551187CED44945BE5A580B73E09B6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Churn</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Churn]</local-name>
+            <parent-name>[Sample_customer_churn.csv]</parent-name>
+            <remote-alias>Churn</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample_customer_churn.csv_73551187CED44945BE5A580B73E09B6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F13</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F13]</local-name>
+            <parent-name>[Sample_customer_churn.csv]</parent-name>
+            <remote-alias>F13</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample_customer_churn.csv_73551187CED44945BE5A580B73E09B6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F14</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F14]</local-name>
+            <parent-name>[Sample_customer_churn.csv]</parent-name>
+            <remote-alias>F14</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample_customer_churn.csv_73551187CED44945BE5A580B73E09B6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F15</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F15]</local-name>
+            <parent-name>[Sample_customer_churn.csv]</parent-name>
+            <remote-alias>F15</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample_customer_churn.csv_73551187CED44945BE5A580B73E09B6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age 1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Age 1]</local-name>
+            <parent-name>[Sample_customer_churn.csv]</parent-name>
+            <remote-alias>Age 1</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample_customer_churn.csv_73551187CED44945BE5A580B73E09B6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tenure 1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Tenure 1]</local-name>
+            <parent-name>[Sample_customer_churn.csv]</parent-name>
+            <remote-alias>Tenure 1</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample_customer_churn.csv_73551187CED44945BE5A580B73E09B6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Usage Frequency 1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Usage Frequency 1]</local-name>
+            <parent-name>[Sample_customer_churn.csv]</parent-name>
+            <remote-alias>Usage Frequency 1</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample_customer_churn.csv_73551187CED44945BE5A580B73E09B6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Support Calls 1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Support Calls 1]</local-name>
+            <parent-name>[Sample_customer_churn.csv]</parent-name>
+            <remote-alias>Support Calls 1</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample_customer_churn.csv_73551187CED44945BE5A580B73E09B6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Payment Delay 1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Payment Delay 1]</local-name>
+            <parent-name>[Sample_customer_churn.csv]</parent-name>
+            <remote-alias>Payment Delay 1</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample_customer_churn.csv_73551187CED44945BE5A580B73E09B6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Spend 1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Total Spend 1]</local-name>
+            <parent-name>[Sample_customer_churn.csv]</parent-name>
+            <remote-alias>Total Spend 1</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample_customer_churn.csv_73551187CED44945BE5A580B73E09B6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last Interaction 1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Last Interaction 1]</local-name>
+            <parent-name>[Sample_customer_churn.csv]</parent-name>
+            <remote-alias>Last Interaction 1</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample_customer_churn.csv_73551187CED44945BE5A580B73E09B6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Churn 1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Churn 1]</local-name>
+            <parent-name>[Sample_customer_churn.csv]</parent-name>
+            <remote-alias>Churn 1</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample_customer_churn.csv_73551187CED44945BE5A580B73E09B6B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' caption='Ages' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Age]' peg='0' size='3' />
+      </column>
+      <column caption='Age-Payment Delay Window Correlation' datatype='real' name='[Age-Payment Delay  Correlation (copy)_1244119460842987527]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='WINDOW_CORR(AVG([Age]), AVG([Payment Delay]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='Avg Spend (bin)' datatype='integer' name='[Avg Spend (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='1' formula='[Calculation_1925288904933711872]' peg='0' size='20' />
+      </column>
+      <column caption='Gender Encode' datatype='integer' name='[Calculation_1244119460839092227]' role='measure' type='ordinal'>
+        <calculation class='tableau' formula='IF [Gender]=&quot;Male&quot; Then 1 ELSE 0 END' />
+      </column>
+      <column caption='Avg Spend' datatype='real' name='[Calculation_1925288904933711872]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Total Spend]/[Usage Frequency]' />
+      </column>
+      <column caption='Churn Rate' datatype='real' name='[Calculation_564920341662482432]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD(IF [Churn]=1 THEN [CustomerID] ELSE NULL END)/COUNT([CustomerID])' />
+      </column>
+      <column aggregation='Sum' caption='Churn Filter' datatype='integer' name='[Churn (copy)_564920341675704322]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='[Churn]' />
+      </column>
+      <column datatype='integer' name='[Churn]' role='measure' type='quantitative' />
+      <column caption='Customer ID (copy)' datatype='integer' name='[Customer ID (copy)_564920341676666883]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[CustomerID]' />
+      </column>
+      <column caption='Customer ID' datatype='integer' name='[CustomerID]' role='dimension' type='ordinal' />
+      <column caption='Subtype Encode' datatype='integer' name='[Gender Encode (copy)_1244119460839342084]' role='measure' type='ordinal'>
+        <calculation class='tableau' formula='IF [Subscription Type]=&quot;Basic&quot; Then 1 &#13;&#10;ELSEIF [Subscription Type]=&quot;Premium&quot; Then 2 &#13;&#10;ELSE 0 END' />
+      </column>
+      <column aggregation='None' caption='Last Interaction (bin)' datatype='integer' name='[Last Interaction (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Last Interaction]' peg='0' size='2' />
+      </column>
+      <column datatype='integer' name='[Last Interaction]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='Payment Delays' datatype='integer' name='[Payment Delay (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Payment Delay]' peg='0' size='1' />
+      </column>
+      <column datatype='integer' name='[Payment Delay]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Subscription Type]' role='dimension' type='nominal' />
+      <column aggregation='None' caption='Support Call' datatype='integer' name='[Support Calls (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Support Calls]' peg='0' size='1' />
+      </column>
+      <column datatype='integer' name='[Support Calls]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Tenure]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='Total Spend (bin)' datatype='integer' name='[Total Spend (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='1' formula='[Total Spend]' peg='0' size='25' />
+      </column>
+      <column datatype='integer' name='[Total Spend]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Usage Frequency]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sample_customer_churn.csv' datatype='table' name='[__tableau_internal_object_id__].[Sample_customer_churn.csv_73551187CED44945BE5A580B73E09B6B]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[Sample_customer_churn.csv_73551187CED44945BE5A580B73E09B6B]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Sample_customer_churn.csv_73551187CED44945BE5A580B73E09B6B:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Support Calls]' derivation='Attribute' name='[attr:Support Calls:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Customer ID (copy)_564920341676666883]' derivation='Avg' name='[avg:Customer ID (copy)_564920341676666883:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Support Calls]' derivation='Avg' name='[avg:Support Calls:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Tenure]' derivation='Avg' name='[avg:Tenure:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total Spend]' derivation='Avg' name='[avg:Total Spend:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Usage Frequency]' derivation='Avg' name='[avg:Usage Frequency:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Customer ID (copy)_564920341676666883]' derivation='CountD' name='[ctd:Customer ID (copy)_564920341676666883:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Support Calls]' derivation='Median' name='[med:Support Calls:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Tenure]' derivation='Median' name='[med:Tenure:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Usage Frequency]' derivation='Median' name='[med:Usage Frequency:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Subscription Type]' derivation='None' name='[none:Subscription Type:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Support Calls]' derivation='None' name='[none:Support Calls:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Usage Frequency]' derivation='None' name='[none:Usage Frequency:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Age]' derivation='Sum' name='[sum:Age:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Churn]' derivation='Sum' name='[sum:Churn:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Customer ID (copy)_564920341676666883]' derivation='Sum' name='[sum:Customer ID (copy)_564920341676666883:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Last Interaction]' derivation='Sum' name='[sum:Last Interaction:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Payment Delay]' derivation='Sum' name='[sum:Payment Delay:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Support Calls]' derivation='Sum' name='[sum:Support Calls:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Tenure]' derivation='Sum' name='[sum:Tenure:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total Spend]' derivation='Sum' name='[sum:Total Spend:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Usage Frequency]' derivation='Sum' name='[sum:Usage Frequency:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_564920341662482432]' derivation='User' name='[usr:Calculation_564920341662482432:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;[federated.13qdhf91mq3w3f1151htp1yxdc36].[avg:Tenure:qk]&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;[federated.13qdhf91mq3w3f1151htp1yxdc36].[med:Tenure:qk]&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;[federated.13qdhf91mq3w3f1151htp1yxdc36].[sum:Tenure:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Age:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.13qdhf91mq3w3f1151htp1yxdc36].[sum:Age:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.13qdhf91mq3w3f1151htp1yxdc36].[avg:Customer ID (copy)_564920341676666883:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.13qdhf91mq3w3f1151htp1yxdc36].[ctd:Customer ID (copy)_564920341676666883:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.13qdhf91mq3w3f1151htp1yxdc36].[sum:Customer ID (copy)_564920341676666883:qk]&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;[federated.13qdhf91mq3w3f1151htp1yxdc36].[avg:Total Spend:qk]&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;[federated.13qdhf91mq3w3f1151htp1yxdc36].[sum:Total Spend:qk]&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;[federated.13qdhf91mq3w3f1151htp1yxdc36].[sum:Last Interaction:qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.13qdhf91mq3w3f1151htp1yxdc36].[sum:Churn:qk]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[federated.13qdhf91mq3w3f1151htp1yxdc36].[sum:Payment Delay:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.13qdhf91mq3w3f1151htp1yxdc36].[avg:Usage Frequency:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.13qdhf91mq3w3f1151htp1yxdc36].[med:Usage Frequency:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Usage Frequency:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.13qdhf91mq3w3f1151htp1yxdc36].[sum:Usage Frequency:qk]&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;[federated.13qdhf91mq3w3f1151htp1yxdc36].[attr:Support Calls:qk]&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;[federated.13qdhf91mq3w3f1151htp1yxdc36].[avg:Support Calls:qk]&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;[federated.13qdhf91mq3w3f1151htp1yxdc36].[med:Support Calls:qk]&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Support Calls:qk]&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;[federated.13qdhf91mq3w3f1151htp1yxdc36].[sum:Support Calls:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Age-Payment Delay  Correlation (copy)_1244119460841291782:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Calculation_1244119460823764992:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Calculation_564920341662482432:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Gender-Sub Type Correlation  (copy)_1244119460841041925:qk]&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;[federated.13qdhf91mq3w3f1151htp1yxdc36].[__tableau_internal_object_id__].[cnt:Sample_customer_churn.csv_73551187CED44945BE5A580B73E09B6B:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Subscription Type:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Basic&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Standard&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Premium&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Bangladesh&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sample_customer_churn.csv' id='Sample_customer_churn.csv_73551187CED44945BE5A580B73E09B6B'>
+            <properties context=''>
+              <relation connection='textscan.055pdix1hbohy41exjzg90stg381' name='Sample_customer_churn.csv' table='[Sample_customer_churn#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='CustomerID' ordinal='0' />
+                  <column datatype='integer' name='Age' ordinal='1' />
+                  <column datatype='string' name='Gender' ordinal='2' />
+                  <column datatype='integer' name='Tenure' ordinal='3' />
+                  <column datatype='integer' name='Usage Frequency' ordinal='4' />
+                  <column datatype='integer' name='Support Calls' ordinal='5' />
+                  <column datatype='integer' name='Payment Delay' ordinal='6' />
+                  <column datatype='string' name='Subscription Type' ordinal='7' />
+                  <column datatype='string' name='Contract Length' ordinal='8' />
+                  <column datatype='integer' name='Total Spend' ordinal='9' />
+                  <column datatype='integer' name='Last Interaction' ordinal='10' />
+                  <column datatype='integer' name='Churn' ordinal='11' />
+                  <column datatype='string' name='F13' ordinal='12' />
+                  <column datatype='string' name='F14' ordinal='13' />
+                  <column datatype='string' name='F15' ordinal='14' />
+                  <column datatype='string' name='Age 1' ordinal='15' />
+                  <column datatype='string' name='Tenure 1' ordinal='16' />
+                  <column datatype='string' name='Usage Frequency 1' ordinal='17' />
+                  <column datatype='string' name='Support Calls 1' ordinal='18' />
+                  <column datatype='string' name='Payment Delay 1' ordinal='19' />
+                  <column datatype='string' name='Total Spend 1' ordinal='20' />
+                  <column datatype='string' name='Last Interaction 1' ordinal='21' />
+                  <column datatype='string' name='Churn 1' ordinal='22' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Age-wise Churn %'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#dfedeb' fontsize='21'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sample_customer_churn' name='federated.13qdhf91mq3w3f1151htp1yxdc36' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13qdhf91mq3w3f1151htp1yxdc36'>
+            <column aggregation='None' caption='Ages' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Age]' peg='0' size='3' />
+            </column>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column caption='Churn Rate' datatype='real' name='[Calculation_564920341662482432]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(IF [Churn]=1 THEN [CustomerID] ELSE NULL END)/COUNT([CustomerID])' />
+            </column>
+            <column datatype='integer' name='[Churn]' role='measure' type='quantitative' />
+            <column caption='Customer ID' datatype='integer' name='[CustomerID]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_564920341662482432]' derivation='User' name='[usr:Calculation_564920341662482432:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Calculation_564920341662482432:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Calculation_564920341662482432:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#dfedeb' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#76b7b2' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Calculation_564920341662482432:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#76b7b2' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Calculation_564920341662482432:qk]</rows>
+        <cols>([federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Gender:nk] / [federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Age (bin):ok])</cols>
+        <show-full-range>
+          <column>[federated.13qdhf91mq3w3f1151htp1yxdc36].[Age (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{B71E45E0-8B7D-4DBB-ABF2-2DC5F7FC209D}' />
+    </worksheet>
+    <worksheet name='Average Monthly Contract Churned User Support Calls'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Total Number of Customers</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sample_customer_churn' name='federated.13qdhf91mq3w3f1151htp1yxdc36' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13qdhf91mq3w3f1151htp1yxdc36'>
+            <column aggregation='Sum' caption='Churn Filter' datatype='integer' name='[Churn (copy)_564920341675704322]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='[Churn]' />
+            </column>
+            <column datatype='integer' name='[Churn]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Contract Length]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Support Calls]' role='measure' type='quantitative' />
+            <column-instance column='[Support Calls]' derivation='Avg' name='[avg:Support Calls:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Churn (copy)_564920341675704322]' derivation='None' name='[none:Churn (copy)_564920341675704322:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Contract Length]' derivation='None' name='[none:Contract Length:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Churn (copy)_564920341675704322:ok]'>
+            <groupfilter function='level-members' level='[none:Churn (copy)_564920341675704322:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Contract Length:nk]'>
+            <groupfilter function='member' level='[none:Contract Length:nk]' member='&quot;Monthly&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Churn (copy)_564920341675704322:ok]</column>
+            <column>[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Contract Length:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='253' />
+            <format attr='font-size' data-class='subtotal' scope='rows' value='36' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='color' value='#e15759' />
+            <format attr='text-format' field='[federated.13qdhf91mq3w3f1151htp1yxdc36].[avg:Support Calls:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='text-align' data-class='subtotal' value='center' />
+            <format attr='vertical-align' data-class='subtotal' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' scope='rows' value='48' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' data-class='subtotal' scope='cols' value='#e8edda' />
+            <format attr='band-color' scope='cols' value='#e9ebe0' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='background-color' value='#f8867d' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#f5eddc' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.13qdhf91mq3w3f1151htp1yxdc36].[avg:Support Calls:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Total Number of Customers:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.13qdhf91mq3w3f1151htp1yxdc36].[avg:Support Calls:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#7e0000' fontname='Tableau Bold' fontsize='18'>Average Monthly Contract User Support Calls</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#7e0000' fontsize='22'><![CDATA[<[federated.13qdhf91mq3w3f1151htp1yxdc36].[avg:Support Calls:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C9AE553B-BD01-41BC-8EF1-839CCF52D3EC}' />
+    </worksheet>
+    <worksheet name='Average Platform Support Calls'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Total Number of Customers</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sample_customer_churn' name='federated.13qdhf91mq3w3f1151htp1yxdc36' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13qdhf91mq3w3f1151htp1yxdc36'>
+            <column datatype='integer' name='[Support Calls]' role='measure' type='quantitative' />
+            <column-instance column='[Support Calls]' derivation='Avg' name='[avg:Support Calls:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='253' />
+            <format attr='font-size' data-class='subtotal' scope='rows' value='36' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='text-format' field='[federated.13qdhf91mq3w3f1151htp1yxdc36].[avg:Support Calls:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='text-align' data-class='subtotal' value='center' />
+            <format attr='vertical-align' data-class='subtotal' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' scope='rows' value='48' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' data-class='subtotal' scope='cols' value='#e8edda' />
+            <format attr='band-color' scope='cols' value='#e9ebe0' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='background-color' value='#f3ebf3' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#f5eddc' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.13qdhf91mq3w3f1151htp1yxdc36].[avg:Support Calls:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Total Number of Customers:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.13qdhf91mq3w3f1151htp1yxdc36].[avg:Support Calls:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#b07aa1' fontname='Tableau Bold' fontsize='22'>Average Platform Support Calls</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#b07aa1' fontsize='22'><![CDATA[<[federated.13qdhf91mq3w3f1151htp1yxdc36].[avg:Support Calls:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8AB007E0-07F0-4BB9-8207-1F1EADA3ABCE}' />
+    </worksheet>
+    <worksheet name='Average Retained User Support Calls'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Total Number of Customers</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sample_customer_churn' name='federated.13qdhf91mq3w3f1151htp1yxdc36' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13qdhf91mq3w3f1151htp1yxdc36'>
+            <column aggregation='Sum' caption='Churn Filter' datatype='integer' name='[Churn (copy)_564920341675704322]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='[Churn]' />
+            </column>
+            <column datatype='integer' name='[Churn]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Support Calls]' role='measure' type='quantitative' />
+            <column-instance column='[Support Calls]' derivation='Avg' name='[avg:Support Calls:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Churn (copy)_564920341675704322]' derivation='None' name='[none:Churn (copy)_564920341675704322:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Churn (copy)_564920341675704322:ok]'>
+            <groupfilter function='member' level='[none:Churn (copy)_564920341675704322:ok]' member='0' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Churn (copy)_564920341675704322:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='253' />
+            <format attr='font-size' data-class='subtotal' scope='rows' value='36' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='text-format' field='[federated.13qdhf91mq3w3f1151htp1yxdc36].[avg:Support Calls:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='text-align' data-class='subtotal' value='center' />
+            <format attr='vertical-align' data-class='subtotal' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' scope='rows' value='48' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' data-class='subtotal' scope='cols' value='#e8edda' />
+            <format attr='band-color' scope='cols' value='#e9ebe0' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='background-color' value='#f5eddc' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#f5eddc' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.13qdhf91mq3w3f1151htp1yxdc36].[avg:Support Calls:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Total Number of Customers:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.13qdhf91mq3w3f1151htp1yxdc36].[avg:Support Calls:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#b6992d' fontname='Tableau Bold' fontsize='22'>Average Retained User Support Calls</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#b6992d' fontsize='22'><![CDATA[<[federated.13qdhf91mq3w3f1151htp1yxdc36].[avg:Support Calls:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{AE9C6D7E-5221-45AF-BEEB-D833C154DEA8}' />
+    </worksheet>
+    <worksheet name='Average Tenure in Days'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Total Number of Customers</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sample_customer_churn' name='federated.13qdhf91mq3w3f1151htp1yxdc36' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13qdhf91mq3w3f1151htp1yxdc36'>
+            <column datatype='integer' name='[Tenure]' role='measure' type='quantitative' />
+            <column-instance column='[Tenure]' derivation='Avg' name='[avg:Tenure:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.13qdhf91mq3w3f1151htp1yxdc36].[avg:Tenure:qk]' value='n#,##0;-#,##0' />
+            <format attr='height' value='252' />
+            <format attr='width' value='348' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f9e9e0' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#f5eddc' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.13qdhf91mq3w3f1151htp1yxdc36].[avg:Tenure:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Total Number of Customers:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.13qdhf91mq3w3f1151htp1yxdc36].[avg:Tenure:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#c15f4d' fontname='Tableau Bold' fontsize='22'>Average Tenure in Days</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#c15f4d' fontsize='22'><![CDATA[<[federated.13qdhf91mq3w3f1151htp1yxdc36].[avg:Tenure:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{9F99B57B-D9F3-4B6F-867B-0000799D4C07}' />
+    </worksheet>
+    <worksheet name='Churn Rate'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Total Number of Customers</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sample_customer_churn' name='federated.13qdhf91mq3w3f1151htp1yxdc36' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13qdhf91mq3w3f1151htp1yxdc36'>
+            <column caption='Churn Rate' datatype='real' name='[Calculation_564920341662482432]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(IF [Churn]=1 THEN [CustomerID] ELSE NULL END)/COUNT([CustomerID])' />
+            </column>
+            <column datatype='integer' name='[Churn]' role='measure' type='quantitative' />
+            <column caption='Customer ID' datatype='integer' name='[CustomerID]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_564920341662482432]' derivation='User' name='[usr:Calculation_564920341662482432:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='236' />
+            <format attr='font-size' data-class='subtotal' scope='rows' value='36' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='text-format' field='[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Calculation_564920341662482432:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='text-align' data-class='subtotal' value='center' />
+            <format attr='vertical-align' data-class='subtotal' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' scope='rows' value='48' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' data-class='subtotal' scope='cols' value='#e8edda' />
+            <format attr='band-color' scope='cols' value='#e9ebe0' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='background-color' value='#ff5f2e' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#f5eddc' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Calculation_564920341662482432:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Total Number of Customers:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Calculation_564920341662482432:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#7e0000' fontname='Tableau Bold' fontsize='22'>Churn Rate</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#7e0000' fontsize='22'><![CDATA[<[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Calculation_564920341662482432:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B5C05259-945D-461D-8DDB-9A56191F82E5}' />
+    </worksheet>
+    <worksheet name='Gender-Wise Churn %'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#e8edda' fontsize='21'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sample_customer_churn' name='federated.13qdhf91mq3w3f1151htp1yxdc36' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13qdhf91mq3w3f1151htp1yxdc36'>
+            <column caption='Churn Rate' datatype='real' name='[Calculation_564920341662482432]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(IF [Churn]=1 THEN [CustomerID] ELSE NULL END)/COUNT([CustomerID])' />
+            </column>
+            <column datatype='integer' name='[Churn]' role='measure' type='quantitative' />
+            <column caption='Customer ID' datatype='integer' name='[CustomerID]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_564920341662482432]' derivation='User' name='[usr:Calculation_564920341662482432:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Calculation_564920341662482432:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Calculation_564920341662482432:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e8edda' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#59a14f' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Calculation_564920341662482432:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.0104972124099731' />
+                <format attr='mark-color' value='#59a14f' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Calculation_564920341662482432:qk]</rows>
+        <cols>[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Gender:nk]</cols>
+      </table>
+      <simple-id uuid='{8B690871-B6BC-4E0D-BA13-6E65522E3386}' />
+    </worksheet>
+    <worksheet name='Last Interaction Churn %'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#fad3d3' fontsize='21'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sample_customer_churn' name='federated.13qdhf91mq3w3f1151htp1yxdc36' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13qdhf91mq3w3f1151htp1yxdc36'>
+            <column caption='Churn Rate' datatype='real' name='[Calculation_564920341662482432]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(IF [Churn]=1 THEN [CustomerID] ELSE NULL END)/COUNT([CustomerID])' />
+            </column>
+            <column datatype='integer' name='[Churn]' role='measure' type='quantitative' />
+            <column caption='Customer ID' datatype='integer' name='[CustomerID]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column aggregation='None' caption='Last Interaction (bin)' datatype='integer' name='[Last Interaction (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Last Interaction]' peg='0' size='2' />
+            </column>
+            <column datatype='integer' name='[Last Interaction]' role='measure' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Last Interaction (bin)]' derivation='None' name='[none:Last Interaction (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_564920341662482432]' derivation='User' name='[usr:Calculation_564920341662482432:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Calculation_564920341662482432:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Calculation_564920341662482432:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f3ebf3' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ff557f' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Calculation_564920341662482432:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='9' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#d37295' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='size' value='0.93353593349456787' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Calculation_564920341662482432:qk]</rows>
+        <cols>([federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Gender:nk] / [federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Last Interaction (bin):ok])</cols>
+        <show-full-range>
+          <column>[federated.13qdhf91mq3w3f1151htp1yxdc36].[Age (bin)]</column>
+          <column>[federated.13qdhf91mq3w3f1151htp1yxdc36].[Last Interaction (bin)]</column>
+          <column>[federated.13qdhf91mq3w3f1151htp1yxdc36].[Payment Delay (bin)]</column>
+          <column>[federated.13qdhf91mq3w3f1151htp1yxdc36].[Support Calls (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{4787CCA1-F41B-4E8A-A1A6-0A3629E005F2}' />
+    </worksheet>
+    <worksheet name='Payment Delay-wise Churn %'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f8c2bf' fontsize='21'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sample_customer_churn' name='federated.13qdhf91mq3w3f1151htp1yxdc36' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13qdhf91mq3w3f1151htp1yxdc36'>
+            <column caption='Churn Rate' datatype='real' name='[Calculation_564920341662482432]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(IF [Churn]=1 THEN [CustomerID] ELSE NULL END)/COUNT([CustomerID])' />
+            </column>
+            <column datatype='integer' name='[Churn]' role='measure' type='quantitative' />
+            <column caption='Customer ID' datatype='integer' name='[CustomerID]' role='dimension' type='ordinal' />
+            <column aggregation='None' caption='Payment Delays' datatype='integer' name='[Payment Delay (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Payment Delay]' peg='0' size='1' />
+            </column>
+            <column datatype='integer' name='[Payment Delay]' role='measure' type='quantitative' />
+            <column-instance column='[Payment Delay (bin)]' derivation='None' name='[none:Payment Delay (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_564920341662482432]' derivation='User' name='[usr:Calculation_564920341662482432:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Calculation_564920341662482432:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Calculation_564920341662482432:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f8c2bf' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#e15759' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Calculation_564920341662482432:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#e15759' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Calculation_564920341662482432:qk]</rows>
+        <cols>[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Payment Delay (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.13qdhf91mq3w3f1151htp1yxdc36].[Age (bin)]</column>
+          <column>[federated.13qdhf91mq3w3f1151htp1yxdc36].[Payment Delay (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{73791367-10A0-4783-82D6-30E97EFFFA23}' />
+    </worksheet>
+    <worksheet name='Subscription Type &amp; Contract Length Churn Rate'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#00007f' fontsize='21'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sample_customer_churn' name='federated.13qdhf91mq3w3f1151htp1yxdc36' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13qdhf91mq3w3f1151htp1yxdc36'>
+            <column aggregation='None' caption='Ages' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Age]' peg='0' size='3' />
+            </column>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column caption='Churn Rate' datatype='real' name='[Calculation_564920341662482432]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(IF [Churn]=1 THEN [CustomerID] ELSE NULL END)/COUNT([CustomerID])' />
+            </column>
+            <column aggregation='Sum' caption='Churn Filter' datatype='integer' name='[Churn (copy)_564920341675704322]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='[Churn]' />
+            </column>
+            <column datatype='integer' name='[Churn]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Contract Length]' role='dimension' type='nominal' />
+            <column caption='Customer ID' datatype='integer' name='[CustomerID]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Subscription Type]' role='dimension' type='nominal' />
+            <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Churn (copy)_564920341675704322]' derivation='None' name='[none:Churn (copy)_564920341675704322:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Contract Length]' derivation='None' name='[none:Contract Length:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Subscription Type]' derivation='None' name='[none:Subscription Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_564920341662482432]' derivation='User' name='[usr:Calculation_564920341662482432:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Age (bin):ok]'>
+            <groupfilter function='member' level='[none:Age (bin):ok]' member='16' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Churn (copy)_564920341675704322:ok]'>
+            <groupfilter function='level-members' level='[none:Churn (copy)_564920341675704322:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Churn (copy)_564920341675704322:ok]</column>
+            <column>[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Age (bin):ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' field='[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Subscription Type:nk]' value='center' />
+            <format attr='wrap' field='[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Subscription Type:nk]' value='on' />
+            <format attr='text-align' field='[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Calculation_564920341662482432:qk]' value='center' />
+            <format attr='text-format' field='[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Calculation_564920341662482432:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='wrap' field='[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Contract Length:nk]' value='on' />
+            <format attr='text-align' field='[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Subscription Type:nk]' value='center' />
+            <format attr='wrap' field='[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Subscription Type:nk]' value='on' />
+            <format attr='text-format' field='[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Calculation_564920341662482432:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f0f7fa' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#55aaff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Subscription Type:nk]' />
+              <text column='[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Calculation_564920341662482432:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.94453036785125732' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Calculation_564920341662482432:qk]</rows>
+        <cols>([federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Contract Length:nk] / [federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Subscription Type:nk])</cols>
+      </table>
+      <simple-id uuid='{3FC0CB98-D198-4764-BCA1-1DF7F8CA725C}' />
+    </worksheet>
+    <worksheet name='Support Call Churn % Distribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffd4c1' fontsize='21'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sample_customer_churn' name='federated.13qdhf91mq3w3f1151htp1yxdc36' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13qdhf91mq3w3f1151htp1yxdc36'>
+            <column caption='Churn Rate' datatype='real' name='[Calculation_564920341662482432]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(IF [Churn]=1 THEN [CustomerID] ELSE NULL END)/COUNT([CustomerID])' />
+            </column>
+            <column datatype='integer' name='[Churn]' role='measure' type='quantitative' />
+            <column caption='Customer ID' datatype='integer' name='[CustomerID]' role='dimension' type='ordinal' />
+            <column aggregation='None' caption='Support Call' datatype='integer' name='[Support Calls (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Support Calls]' peg='0' size='1' />
+            </column>
+            <column datatype='integer' name='[Support Calls]' role='measure' type='quantitative' />
+            <column-instance column='[Support Calls (bin)]' derivation='None' name='[none:Support Calls (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_564920341662482432]' derivation='User' name='[usr:Calculation_564920341662482432:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Calculation_564920341662482432:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Calculation_564920341662482432:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffd4c1' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#9d7660' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Calculation_564920341662482432:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#9d7660' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13qdhf91mq3w3f1151htp1yxdc36].[usr:Calculation_564920341662482432:qk]</rows>
+        <cols>[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Support Calls (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.13qdhf91mq3w3f1151htp1yxdc36].[Age (bin)]</column>
+          <column>[federated.13qdhf91mq3w3f1151htp1yxdc36].[Payment Delay (bin)]</column>
+          <column>[federated.13qdhf91mq3w3f1151htp1yxdc36].[Support Calls (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{3305DC32-3A14-4D70-ACBE-8FD6A0697B68}' />
+    </worksheet>
+    <worksheet name='Total Number of Customers'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Total Number of Customers</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sample_customer_churn' name='federated.13qdhf91mq3w3f1151htp1yxdc36' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13qdhf91mq3w3f1151htp1yxdc36'>
+            <column caption='Customer ID' datatype='integer' name='[CustomerID]' role='dimension' type='ordinal' />
+            <column-instance column='[CustomerID]' derivation='Count' name='[cnt:CustomerID:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.13qdhf91mq3w3f1151htp1yxdc36].[cnt:CustomerID:qk]' value='n#,##0,.00K;-#,##0,.00K' />
+            <format attr='font-size' field='[federated.13qdhf91mq3w3f1151htp1yxdc36].[cnt:CustomerID:qk]' value='48' />
+            <format attr='font-size' data-class='subtotal' scope='rows' value='36' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='height' value='253' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='text-align' data-class='subtotal' value='center' />
+            <format attr='vertical-align' data-class='subtotal' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.13qdhf91mq3w3f1151htp1yxdc36].[cnt:CustomerID:qk]' value='36' />
+            <format attr='font-size' scope='rows' value='48' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' data-class='subtotal' scope='cols' value='#e8edda' />
+            <format attr='band-color' scope='cols' value='#e9ebe0' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='background-color' value='#e9ebe0' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#f5eddc' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='font-size' field='[federated.13qdhf91mq3w3f1151htp1yxdc36].[cnt:CustomerID:qk]' value='72' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.13qdhf91mq3w3f1151htp1yxdc36].[cnt:CustomerID:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Total Number of Customers:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.13qdhf91mq3w3f1151htp1yxdc36].[cnt:CustomerID:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#59a14f' fontname='Tableau Bold' fontsize='22'>Total Number of Customers</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#59a14f' fontsize='22'><![CDATA[<[federated.13qdhf91mq3w3f1151htp1yxdc36].[cnt:CustomerID:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{31FAF93C-0693-447A-BC19-1DA31D6906BA}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Age Dashboard'>
+      <style>
+        <style-rule element='dash-text'>
+          <format attr='text-align' id='dash-text_7' value='left' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='43' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='12' type-v2='layout-basic' w='98400' x='800' y='1000'>
+              <zone forceUpdate='true' h='40875' id='7' type-v2='text' w='98400' x='800' y='58125'>
+                <formatted-text>
+                  <run bold='true' fontcolor='#000000' fontsize='12' italic='true'>Insights</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontsize='12'>1. Each age group receives a different value proposition from the e-commerce platform, causing them to churn out at different rates.</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontsize='12'>2. Common reasons may be the absence of an intuitive user experience and lack of customer education for the platform.</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontsize='12' italic='true'>Solutions</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontsize='12'>1. Create advertisements and content aimed at customer education and value proposition to show what the user is missing out on.</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontsize='12'>2. Improve customer experience to be more responsive for older age groups, as that segment has a 100% churn rate.</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='background-color' value='#efebe8' />
+                </zone-style>
+              </zone>
+              <zone h='57125' id='82' name='Age-wise Churn %' w='98400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='106' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='105' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='57125' id='82' is-fixed='true' name='Age-wise Churn %' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='40875' id='7' type-v2='text' w='98400' x='800' y='58125'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontsize='12' italic='true'>Insights</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontsize='12'>1. Each age group receives a different value proposition from the e-commerce platform, causing them to churn out at different rates.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontsize='12'>2. Common reasons may be the absence of an intuitive user experience and lack of customer education for the platform.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontsize='12' italic='true'>Solutions</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontsize='12'>1. Create advertisements and content aimed at customer education and value proposition to show what the user is missing out on.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontsize='12'>2. Improve customer experience to be more responsive for older age groups, as that segment has a 100% churn rate.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#efebe8' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{853B48BB-D49A-412A-B29A-EEA02E01DD2E}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Contract Length Dashboard'>
+      <style>
+        <style-rule element='dash-text'>
+          <format attr='text-align' id='dash-text_7' value='left' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='36' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='34' type-v2='layout-basic' w='98400' x='800' y='1000'>
+              <zone forceUpdate='true' h='32667' id='7' type-v2='text' w='98400' x='800' y='66333'>
+                <formatted-text>
+                  <run bold='true' fontcolor='#000000' fontsize='12' italic='true'>Insights:</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontsize='12'>1. Every customer who has subscribed to the monthly contract has always churned out.</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontsize='12'>2. The inefficacy of the monthly contract can also be seen in its churned customers placing a higher average number of support calls than both the platform and retained customers average.</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontsize='12' italic='true'>Possible Solution</run>
+                  <run bold='true' fontcolor='#000000' fontsize='12'>:</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontsize='12'>1. Revise the constructs and pricing of the monthly contract.</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontsize='12'>2. Target customers churning out from the monthly contracted subscriptions with an initial reduced price offer and a personal call for improved customer support.</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontsize='12'>3. For higher value customers try to dig deeper as to why they churned and find qualitative reasons.</run>
+                  <run>Æ&#10;&#10;&#10;</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='background-color' value='#efebe8' />
+                </zone-style>
+              </zone>
+              <zone h='32667' id='33' name='Subscription Type &amp; Contract Length Churn Rate' w='98400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='32666' id='42' name='Average Platform Support Calls' show-title='false' w='32243' x='33520' y='33667'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='32666' id='43' name='Average Retained User Support Calls' show-title='false' w='33437' x='65763' y='33667'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='32666' id='44' name='Average Monthly Contract Churned User Support Calls' show-title='false' w='32720' x='800' y='33667'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1150' minheight='1150' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='96' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='95' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='253' h='32667' id='33' is-fixed='true' name='Subscription Type &amp; Contract Length Churn Rate' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='254' h='32666' id='44' is-fixed='true' name='Average Monthly Contract Churned User Support Calls' show-title='false' w='32720' x='800' y='33667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='254' h='32666' id='42' is-fixed='true' name='Average Platform Support Calls' show-title='false' w='32243' x='33520' y='33667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='254' h='32666' id='43' is-fixed='true' name='Average Retained User Support Calls' show-title='false' w='33437' x='65763' y='33667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='32667' id='7' type-v2='text' w='98400' x='800' y='66333'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontsize='12' italic='true'>Insights:</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontsize='12'>1. Every customer who has subscribed to the monthly contract has always churned out.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontsize='12'>2. The inefficacy of the monthly contract can also be seen in its churned customers placing a higher average number of support calls than both the platform and retained customers average.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontsize='12' italic='true'>Possible Solution</run>
+                    <run bold='true' fontcolor='#000000' fontsize='12'>:</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontsize='12'>1. Revise the constructs and pricing of the monthly contract.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontsize='12'>2. Target customers churning out from the monthly contracted subscriptions with an initial reduced price offer and a personal call for improved customer support.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontsize='12'>3. For higher value customers try to dig deeper as to why they churned and find qualitative reasons.</run>
+                    <run>Æ&#10;&#10;&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#efebe8' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{4A2B5893-45C2-470D-AF22-1821F40A4A8D}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Gender Dashboard'>
+      <style>
+        <style-rule element='dash-text'>
+          <format attr='text-align' id='dash-text_7' value='left' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='90' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='12' type-v2='layout-basic' w='98400' x='800' y='1000'>
+              <zone forceUpdate='true' h='34625' id='7' type-v2='text' w='98400' x='800' y='64375'>
+                <formatted-text>
+                  <run bold='true' fontcolor='#000000' fontsize='12' italic='true'>Insights:</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontsize='12'>Women are more likely to churn out from the platform than men, especially when they reach 15 days since their last usage, regardless of the age groups.</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontsize='12' italic='true'>Solutions:</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontsize='12'>1. CRM pushes can be sent and churn-specific incentives  can be created to bring these customers back to the platform. </run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontsize='12'>2. For high value customers an attempt could be made to find out qualitative reasons for their churn through surveys and phone calls.</run>
+                  <run>Æ&#10;&#10;</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='background-color' value='#efebe8' />
+                </zone-style>
+              </zone>
+              <zone h='63375' id='39' name='Gender-Wise Churn %' w='32500' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='63375' id='88' name='Last Interaction Churn %' w='65900' x='33300' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='116' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='115' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='63375' id='39' is-fixed='true' name='Gender-Wise Churn %' w='32500' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='63375' id='88' is-fixed='true' name='Last Interaction Churn %' w='65900' x='33300' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='34625' id='7' type-v2='text' w='98400' x='800' y='64375'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontsize='12' italic='true'>Insights:</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontsize='12'>Women are more likely to churn out from the platform than men, especially when they reach 15 days since their last usage, regardless of the age groups.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontsize='12' italic='true'>Solutions:</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontsize='12'>1. CRM pushes can be sent and churn-specific incentives  can be created to bring these customers back to the platform. </run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontsize='12'>2. For high value customers an attempt could be made to find out qualitative reasons for their churn through surveys and phone calls.</run>
+                    <run>Æ&#10;&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#efebe8' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8380F38F-E58B-4582-B748-CE4944616FFD}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Overview Dashboard'>
+      <style>
+        <style-rule element='dash-text'>
+          <format attr='text-align' id='dash-text_7' value='left' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='34000' id='3' name='Total Number of Customers' show-title='false' w='49200' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+              <format attr='background-color' value='#e9ebe0' />
+            </zone-style>
+          </zone>
+          <zone h='34000' id='6' name='Average Tenure in Days' show-title='false' w='49200' x='50000' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+              <format attr='background-color' value='#f9e9e0' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='32666' id='7' type-v2='text' w='98400' x='800' y='66334'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontsize='12' italic='true'>Insights:</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontsize='12'>1. The e-commerce company in question struggles to retain customers due to its high overall churn rate and low tenure across the board.</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontsize='12'>2. Over half the customers churn out and, on average, do not stay with the company for more than a month.</run>
+              <run>Æ&#10;&#10;&#10;</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+              <format attr='background-color' value='#efebe8' />
+            </zone-style>
+          </zone>
+          <zone h='31334' id='8' name='Churn Rate' show-title='false' w='98400' x='800' y='35000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='900' minheight='900' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='88' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='87' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='264' h='34000' id='3' is-fixed='true' name='Total Number of Customers' show-title='false' w='49200' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#e9ebe0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='264' h='34000' id='6' is-fixed='true' name='Average Tenure in Days' show-title='false' w='49200' x='50000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f9e9e0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='243' h='31334' id='8' is-fixed='true' name='Churn Rate' show-title='false' w='98400' x='800' y='35000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='32666' id='7' type-v2='text' w='98400' x='800' y='66334'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontsize='12' italic='true'>Insights:</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontsize='12'>1. The e-commerce company in question struggles to retain customers due to its high overall churn rate and low tenure across the board.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontsize='12'>2. Over half the customers churn out and, on average, do not stay with the company for more than a month.</run>
+                    <run>Æ&#10;&#10;&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#efebe8' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{9712C09D-23C8-4DD5-8BC5-D2E98651F6B7}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Reminders Dashboard'>
+      <style>
+        <style-rule element='dash-text'>
+          <format attr='text-align' id='dash-text_7' value='left' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='43' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='12' type-v2='layout-basic' w='98400' x='800' y='1000'>
+              <zone forceUpdate='true' h='40875' id='7' type-v2='text' w='98400' x='800' y='58125'>
+                <formatted-text>
+                  <run bold='true' fontcolor='#000000' fontsize='12' italic='true'>Insights</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontsize='12'>Delayed payments and lack of sufficient responses from support calls cause customers to unwillingly churn out. Since the platform is not always on the customer&apos;s mind, they require constant reminders from to interact with the customer.</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontsize='12' italic='true'>Solutions</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontsize='12'>1. Aiming CRM or push notifications to remind customers delaying their payments close to 21 days.</run>
+                  <run>Æ&#10;</run>
+                  <run bold='true' fontcolor='#000000' fontsize='12'>2. Acquire feedback and trouble shoot problems of those customers  approaching their 4th support call.</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='background-color' value='#efebe8' />
+                </zone-style>
+              </zone>
+              <zone h='57125' id='83' name='Payment Delay-wise Churn %' w='49200' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='57125' id='84' name='Support Call Churn % Distribution' w='49200' x='50000' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='108' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='107' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='57125' id='83' is-fixed='true' name='Payment Delay-wise Churn %' w='49200' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='57125' id='84' is-fixed='true' name='Support Call Churn % Distribution' w='49200' x='50000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='40875' id='7' type-v2='text' w='98400' x='800' y='58125'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontsize='12' italic='true'>Insights</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontsize='12'>Delayed payments and lack of sufficient responses from support calls cause customers to unwillingly churn out. Since the platform is not always on the customer&apos;s mind, they require constant reminders from to interact with the customer.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontsize='12' italic='true'>Solutions</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontsize='12'>1. Aiming CRM or push notifications to remind customers delaying their payments close to 21 days.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontsize='12'>2. Acquire feedback and trouble shoot problems of those customers  approaching their 4th support call.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#efebe8' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{470F9694-AB97-416C-9583-A854E1B110D3}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='26'>Customer Churn Analysis</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' preset-index='9' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='9' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='5809' id='10' type-v2='title' w='98426' x='787' y='830'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='92531' id='7' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='6639'>
+              <zone h='92531' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='6639'>
+                <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='6639' />
+                <zone h='82054' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='17116'>
+                  <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                    <story-points>
+                      <story-point caption='Customer Churn Overview' captured-sheet='Overview Dashboard' id='1' />
+                      <story-point caption='Churn Due to Age' captured-sheet='Age Dashboard' id='4' />
+                      <story-point caption='Churn by Gender and Last Interaction' captured-sheet='Gender Dashboard' id='3' />
+                      <story-point caption='Churn from lack of follow ups' captured-sheet='Reminders Dashboard' id='5' />
+                      <story-point caption='Churn due to contract Length' captured-sheet='Contract Length Dashboard' id='2'>
+                        <capturedDeltas>
+                          <dashboard name='Contract Length Dashboard'>
+                            <zone id='7'>
+                              <formatted-text>
+                                <run>Æ&#10;</run>
+                                <run bold='true' fontcolor='#000000' fontsize='12' italic='true'>Insights:</run>
+                                <run>Æ&#10;</run>
+                                <run bold='true' fontcolor='#000000' fontsize='12'>1. Every customer who has subscribed to the monthly contract has always churned out.</run>
+                                <run>Æ&#10;</run>
+                                <run bold='true' fontcolor='#000000' fontsize='12'>2. The inefficacy of the monthly contract can also be seen in its churned customers placing a higher average number of support calls than both the platform and retained customers average.</run>
+                                <run>Æ&#10;&#10;</run>
+                                <run bold='true' fontcolor='#000000' fontsize='12' italic='true'>Possible Solution</run>
+                                <run bold='true' fontcolor='#000000' fontsize='12'>:</run>
+                                <run>Æ&#10;</run>
+                                <run bold='true' fontcolor='#000000' fontsize='12'>1. Revise the constructs and pricing of the monthly contract.</run>
+                                <run>Æ&#10;</run>
+                                <run bold='true' fontcolor='#000000' fontsize='12'>2. Target customers churning out from the monthly contracted subscriptions with an initial reduced price offer and a personal call for improved customer support.</run>
+                                <run>Æ&#10;</run>
+                                <run bold='true' fontcolor='#000000' fontsize='12'>3. For higher value customers try to dig deeper as to why they churned and find qualitative reasons.</run>
+                                <run>Æ&#10;&#10;&#10;</run>
+                              </formatted-text>
+                            </zone>
+                          </dashboard>
+                        </capturedDeltas>
+                      </story-point>
+                    </story-points>
+                  </flipboard>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{00E99560-E19A-46A0-9561-ED58B40B6382}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{D0325A85-F5C0-49E1-893E-979B6C5F9844}' />
+    </window>
+    <window class='dashboard' hidden='true' name='Age Dashboard'>
+      <viewpoints>
+        <viewpoint name='Age-wise Churn %'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='7' />
+      <simple-id uuid='{0B819D60-01C3-4DD0-B7B7-2943CC52CE40}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Age-wise Churn %'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[:Measure Names]</field>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[Age (group)]</field>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Age (bin):ok]</field>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Churn (copy)_564920341675704322:ok]</field>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Gender:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F7713013-A7AE-4A11-8D7D-8B758228CD0C}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Average Monthly Contract Churned User Support Calls'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Contract Length:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{EF7C3C36-655E-467D-86CF-71994CDE4689}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Average Platform Support Calls'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FEDA1B94-83FF-49A7-9C05-15B57BC2830E}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Average Retained User Support Calls'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CC747A10-2EB1-4C88-961D-1C1FA01E3EA1}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Average Tenure in Days'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6AE1EBB3-8A23-42C0-816E-6905C7AD3112}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Churn Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5F42F7AD-35EC-4A78-B55D-96B30DF6DFAC}' />
+    </window>
+    <window class='dashboard' hidden='true' name='Contract Length Dashboard'>
+      <viewpoints>
+        <viewpoint name='Average Monthly Contract Churned User Support Calls'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Average Platform Support Calls'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Average Retained User Support Calls'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Subscription Type &amp; Contract Length Churn Rate'>
+          <zoom type='fit-width' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{CF69E3A6-2221-4CF7-9A22-00A7F166A3F4}' />
+    </window>
+    <window class='dashboard' hidden='true' name='Gender Dashboard'>
+      <viewpoints>
+        <viewpoint name='Gender-Wise Churn %'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.13qdhf91mq3w3f1151htp1yxdc36].[:Measure Names]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Last Interaction Churn %'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{A0E9839C-E508-49B2-8B22-2E7A83ED3D6F}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Gender-Wise Churn %'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[:Measure Names]</field>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Churn (copy)_564920341675704322:ok]</field>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Gender:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3CFB17F0-F7F4-4635-AA10-917BDDC6EE54}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Last Interaction Churn %'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[:Measure Names]</field>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[Age (group)]</field>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Age (bin):ok]</field>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Churn (copy)_564920341675704322:ok]</field>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Gender:nk]</field>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Last Interaction (bin):ok]</field>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Payment Delay (bin):ok]</field>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Support Calls (bin):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A7936FFD-DB88-4D5C-8A4F-678F98642C3A}' />
+    </window>
+    <window class='dashboard' hidden='true' name='Overview Dashboard'>
+      <viewpoints>
+        <viewpoint name='Average Tenure in Days'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Churn Rate'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Number of Customers'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='7' />
+      <simple-id uuid='{CC5B3452-1A34-48E0-8998-1B8836C5A1C9}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Payment Delay-wise Churn %'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[:Measure Names]</field>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[Age (group)]</field>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Age (bin):ok]</field>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Churn (copy)_564920341675704322:ok]</field>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Gender:nk]</field>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Payment Delay (bin):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{16F54367-7BD4-4A5F-9EF9-6ECC000DDE34}' />
+    </window>
+    <window class='dashboard' hidden='true' name='Reminders Dashboard'>
+      <viewpoints>
+        <viewpoint name='Payment Delay-wise Churn %'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Support Call Churn % Distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='7' />
+      <simple-id uuid='{BE5B77F8-F698-4E41-8D38-178020422B99}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Subscription Type &amp; Contract Length Churn Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Age (bin):ok]' type='filter' />
+            <card param='[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Churn (copy)_564920341675704322:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Contract Length:nk]</field>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Gender:nk]</field>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Subscription Type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0449864C-FD9B-4D69-BBD6-1B04655559F5}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Support Call Churn % Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[:Measure Names]</field>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[Age (group)]</field>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Age (bin):ok]</field>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Churn (copy)_564920341675704322:ok]</field>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Gender:nk]</field>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Payment Delay (bin):ok]</field>
+            <field>[federated.13qdhf91mq3w3f1151htp1yxdc36].[none:Support Calls (bin):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{856D400C-60AA-403F-897E-E94B47F2EF82}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Total Number of Customers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{560D93DC-3B7B-4E01-9F74-D8706A367868}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Story 1' width='192'>
+      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
+      mghAULX/D3qtq+WdxdKEAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
